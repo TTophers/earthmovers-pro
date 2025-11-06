@@ -51,9 +51,6 @@
           <!-- Desktop Menu -->
           <div class="hidden md:flex items-center space-x-8">
             <a href="index.html" class="text-amber-800 hover:text-amber-600 font-medium transition-colors">Home</a>
-            <a href="services.html" class="text-amber-800 hover:text-amber-600 font-medium transition-colors">Services</a>
-            <a href="about.html" class="text-amber-800 hover:text-amber-600 font-medium transition-colors">About Us</a>
-            <a href="portfolio.html" class="text-amber-800 hover:text-amber-600 font-medium transition-colors">Portfolio</a>
             <a href="contact.html" class="bg-amber-600 hover:bg-amber-700 text-white px-6 py-2 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105">
               Get Quote
             </a>
@@ -69,9 +66,6 @@
         <div id="mobile-menu" class="md:hidden hidden mobile-menu border-t border-amber-100 py-4">
           <div class="flex flex-col space-y-4">
             <a href="index.html" class="text-amber-800 hover:text-amber-600 font-medium transition-colors">Home</a>
-            <a href="services.html" class="text-amber-800 hover:text-amber-600 font-medium transition-colors">Services</a>
-            <a href="about.html" class="text-amber-800 hover:text-amber-600 font-medium transition-colors">About Us</a>
-            <a href="portfolio.html" class="text-amber-800 hover:text-amber-600 font-medium transition-colors">Portfolio</a>
             <a href="contact.html" class="bg-amber-600 hover:bg-amber-700 text-white px-4 py-2 rounded-lg font-semibold text-center transition-colors">
               Get Quote
             </a>
@@ -96,49 +90,41 @@
         </div>
     </section>
 
-    <!-- Services Preview -->
-    <section class="py-20 bg-cream-100">
-        <div class="container mx-auto px-6">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold text-stone-800 mb-4">Our Excavation Services</h2>
-                <p class="text-xl text-stone-600 max-w-3xl mx-auto">From small residential projects to large commercial sites, we handle every job with precision and care.</p>
-            </div>
-            
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-amber-50 rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-amber-100">
-                    <div class="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mb-6">
-                        <i data-feather="home" class="text-amber-600"></i>
-                    </div>
-                    <h3 class="text-2xl font-bold text-stone-800 mb-4">Site Preparation</h3>
-                    <p class="text-stone-600 mb-6">Expert land clearing and grading to prepare your property for construction.</p>
-                    <a href="services.html" class="text-amber-600 font-semibold hover:text-amber-700 transition-colors">Learn More →</a>
-                </div>
-                
-                <div class="bg-amber-50 rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-amber-100">
-                    <div class="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mb-6">
-                        <i data-feather="trending-up" class="text-amber-600"></i>
-                    </div>
-                    <h3 class="text-2xl font-bold text-stone-800 mb-4">Land Grading</h3>
-                    <p class="text-stone-600 mb-6">Precise grading services for proper drainage and foundation preparation.</p>
-                    <a href="services.html" class="text-amber-600 font-semibold hover:text-amber-700 transition-colors">Learn More →</a>
-                </div>
-                
-                <div class="bg-amber-50 rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-amber-100">
-                    <div class="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mb-6">
-                        <i data-feather="tool" class="text-amber-600"></i>
-                    </div>
-                    <h3 class="text-2xl font-bold text-stone-800 mb-4">Trenching</h3>
-                    <p class="text-stone-600 mb-6">Professional trenching for utilities, drainage, and foundation work.</p>
-                    <a href="services.html" class="text-amber-600 font-semibold hover:text-amber-700 transition-colors">Learn More →</a>
-                </div>
-            </div>
-            
-            <div class="text-center mt-12">
-                <a href="services.html" class="inline-block border-2 border-amber-600 text-amber-600 hover:bg-amber-600 hover:text-white font-semibold px-8 py-3 rounded-lg transition-all duration-300">
-                    View All Services
-                </a>
-            </div>
+    <section class="py-20 bg-cream-gradient">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-12">
+          <h2 class="text-4xl font-bold text-stone-800 mb-4">Specialized Services</h2>
+          <p class="text-lg text-stone-600 max-w-2xl mx-auto">
+            Explore some of our specialized excavation services. Click any card to get a quote.
+          </p>
         </div>
+    
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- Trenching Card -->
+          <a href="contact.html" class="group bg-amber-50 hover:bg-amber-100 shadow-lg hover:shadow-2xl transition-all duration-300 rounded-xl p-8 flex flex-col items-start">
+            <div class="w-16 h-16 bg-amber-200 rounded-full flex items-center justify-center mb-6 transition-transform duration-300 group-hover:scale-110">
+              <i data-feather="tool" class="text-amber-600"></i>
+            </div>
+            <h3 class="text-2xl font-bold text-stone-800 mb-3 group-hover:text-amber-700 transition-colors">Trenching for Conduit</h3>
+            <p class="text-stone-600 mb-4">
+              Expert trenching services for laying electrical or communication conduit, ensuring precise depth and alignment.
+            </p>
+            <span class="text-amber-600 font-semibold group-hover:underline">Get a Quote →</span>
+          </a>
+    
+          <!-- Missiling / Drilling Card -->
+          <a href="contact.html" class="group bg-amber-50 hover:bg-amber-100 shadow-lg hover:shadow-2xl transition-all duration-300 rounded-xl p-8 flex flex-col items-start">
+            <div class="w-16 h-16 bg-amber-200 rounded-full flex items-center justify-center mb-6 transition-transform duration-300 group-hover:scale-110">
+              <i data-feather="feather" class="text-amber-600"></i>
+            </div>
+            <h3 class="text-2xl font-bold text-stone-800 mb-3 group-hover:text-amber-700 transition-colors">Missiling / Drilling</h3>
+            <p class="text-stone-600 mb-4">
+              Specialized drilling to create holes for foundations, utilities, or other subsurface installations.
+            </p>
+            <span class="text-amber-600 font-semibold group-hover:underline">Get a Quote →</span>
+          </a>
+        </div>
+      </div>
     </section>
 
     <!-- Why Choose Us -->
@@ -188,6 +174,76 @@
                 </div>
             </div>
         </div>
+    </section>
+
+    <section class="bg-cream-gradient py-28">
+      <div class="container mx-auto px-6">
+        <!-- Page Header -->
+        <div class="text-center mb-12">
+          <h1 class="text-4xl md:text-5xl font-bold text-warm-earth mb-4">About EarthMovers Pro</h1>
+          <p class="text-stone-700 max-w-2xl mx-auto text-lg md:text-xl">
+            We’re a team of dedicated professionals committed to providing top-tier excavation services, building strong foundations, and delivering excellence on every project.
+          </p>
+        </div>
+    
+        <!-- Our Mission -->
+        <div class="mb-16 text-center">
+          <h2 class="text-3xl font-semibold text-warm-earth mb-4">Our Mission</h2>
+          <p class="text-stone-700 text-lg md:text-base max-w-3xl mx-auto">
+            At EarthMovers Pro, our mission is simple: provide reliable, safe, and efficient excavation solutions that exceed expectations. From residential to commercial projects, we combine experience, technology, and passion to ensure every job is done right.
+          </p>
+        </div>
+    
+        <!-- Timeline Section -->
+        <div class="mb-16 max-w-4xl mx-auto">
+          <h2 class="text-3xl font-semibold text-warm-earth text-center mb-8">Our History</h2>
+          <div class="border-l-4 border-amber-600 pl-8">
+            <div class="relative mb-12">
+              <div class="absolute -left-5 top-1/2 -translate-y-1/2 w-12 h-12 bg-amber-600 rounded-full flex items-center justify-center text-white font-bold">2003</div>
+              <h3 class="text-xl font-semibold text-stone-800 mb-1 ml-8">Founded</h3>
+              <p class="text-stone-700 text-sm ml-8">EarthMovers Pro was established, laying the foundation for a trusted excavation company.</p>
+            </div>
+            <div class="relative mb-12">
+              <div class="absolute -left-5 top-1/2 -translate-y-1/2 w-12 h-12 bg-amber-600 rounded-full flex items-center justify-center text-white font-bold">2010</div>
+              <h3 class="text-xl font-semibold text-stone-800 mb-1 ml-8">Expansion</h3>
+              <p class="text-stone-700 text-sm ml-8">Expanded services to include commercial excavation and heavy machinery operations.</p>
+            </div>
+            <div class="relative mb-12">
+              <div class="absolute -left-5 top-1/2 -translate-y-1/2 w-12 h-12 bg-amber-600 rounded-full flex items-center justify-center text-white font-bold">2018</div>
+              <h3 class="text-xl font-semibold text-stone-800 mb-1 ml-8">Technology Integration</h3>
+              <p class="text-stone-700 text-sm ml-8">Adopted advanced excavation technology to improve efficiency and safety.</p>
+            </div>
+            <div class="relative">
+              <div class="absolute -left-5 top-1/2 -translate-y-1/2 w-12 h-12 bg-amber-600 rounded-full flex items-center justify-center text-white font-bold">2024</div>
+              <h3 class="text-xl font-semibold text-stone-800 mb-1 ml-8">Today</h3>
+              <p class="text-stone-700 text-sm ml-8">Continuing to build stronger foundations with a focus on community and quality.</p>
+            </div>
+          </div>
+        </div>
+
+    
+        <!-- Values Section -->
+        <div class="mt-16 text-center">
+          <h2 class="text-3xl font-semibold text-warm-earth mb-4">What We Stand For</h2>
+          <p class="text-stone-700 text-lg md:text-base max-w-3xl mx-auto mb-6">
+            Safety, integrity, and excellence guide every project we take on. We treat our clients like partners and aim to build long-term relationships rooted in trust and reliability.
+          </p>
+          <div class="flex flex-col sm:flex-row sm:justify-center gap-6">
+            <div class="bg-white p-6 rounded-lg shadow-md flex-1 hover:shadow-xl transition-shadow">
+              <h3 class="text-xl font-semibold mb-2 text-amber-600">Safety First</h3>
+              <p class="text-stone-600 text-sm">Every site and every task is approached with rigorous safety protocols.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md flex-1 hover:shadow-xl transition-shadow">
+              <h3 class="text-xl font-semibold mb-2 text-amber-600">Precision Work</h3>
+              <p class="text-stone-600 text-sm">From small trenches to large-scale digs, precision and attention to detail are our hallmark.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md flex-1 hover:shadow-xl transition-shadow">
+              <h3 class="text-xl font-semibold mb-2 text-amber-600">Community Focus</h3>
+              <p class="text-stone-600 text-sm">We believe in building stronger foundations for our clients and the community we serve.</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <custom-footer></custom-footer>
