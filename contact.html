@@ -1,9 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EarthMovers Pro - Professional Excavation Services</title>
+  
+    <!-- Primary Title & Description -->
+    <title>2 Brothers Excavation | Excavation, Dirt Work & Site Prep in Clear Creek, Gilpin, Summit & Grand Counties</title>
+    <meta name="description" content="2 Brothers Excavation provides expert excavation, dirt work, grading, site preparation, and septic services for homeowners, small projects, and general contractors across Clear Creek, Gilpin, Summit, and Grand Counties.">
+  
+    <!-- Keywords (not heavily used by Google but still ok to include) -->
+    <meta name="keywords" content="excavation, dirt work, grading, site preparation, septic services, Clear Creek County, Gilpin County, Summit County, Grand County, homeowners, small projects, general contractors">
+  
+    <!-- Author & Robots -->
+    <meta name="author" content="2 Brothers Excavation">
+    <meta name="robots" content="index, follow">
+  
+    <!-- Open Graph / Facebook -->
+    <meta property="og:title" content="2 Brothers Excavation | Excavation & Dirt Work in Colorado">
+    <meta property="og:description" content="Providing excavation, grading, site prep, and septic services for homeowners and contractors in Clear Creek, Gilpin, Summit & Grand Counties.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.2brothersexcavation.com">
+    <meta property="og:image" content="https://www.2brothersexcavation.com/content/heroPic.jpeg">
+  
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="2 Brothers Excavation | Excavation & Dirt Work in Colorado">
+    <meta name="twitter:description" content="Expert excavation, grading, site prep, and septic services for homeowners and general contractors across Clear Creek, Gilpin, Summit & Grand Counties.">
+    <meta name="twitter:image" content="https://www.2brothersexcavation.com/content/heroPic.jpeg">
+  
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.2brothersexcavation.com">
+  
+    <!-- Favicon -->
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+  
+    <!-- Structured Data (JSON-LD) for LocalBusiness -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "2 Brothers Excavation",
+      "image": "https://www.2brothersexcavation.com/content/heroPic.jpeg",
+      "url": "https://www.2brothersexcavation.com",
+      "telephone": "(555) 123-4567",
+      "email": "hello@2brothersexcavation.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "123 Construction Way",
+        "addressLocality": "Dumond",
+        "addressRegion": "CO",
+        "postalCode": "80436",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 39.766, 
+        "longitude": -105.515
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+          ],
+          "opens": "07:00",
+          "closes": "18:00"
+        }
+      ],
+      "sameAs": [
+        "https://www.facebook.com/2BrotherExcavation",
+        "https://www.twitter.com/2BrotherExcavation",
+        "https://www.instagram.com/2BrotherExcavation"
+      ],
+      "priceRange": "$$",
+      "description": "Expert excavation, dirt work, grading, site preparation, and septic services for homeowners, small projects, and general contractors across Clear Creek, Gilpin, Summit, and Grand Counties."
+    }
+    </script>
+  
+    <!-- Tailwind + Feather Icons -->
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+  
+  </head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excavation & Trenching | 2Brothers Excavation</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
@@ -15,19 +102,22 @@
             backgroundImage: {
               // custom background example
               'excavation-hero': "url('images/excavation-bg.jpg')",
-              'gradient-warm': "linear-gradient(to bottom right, #f59e0b, #b45309)",
-              'cream-gradient': 'linear-gradient(to bottom, #FFF8E1, #FBE4C4, #EED3A7)',
+              'gradient-cool': "linear-gradient(to bottom right, #66b3ff, #0082e4)",
+              'blue-gradient': 'linear-gradient(to bottom, #66b3ff, #0082e4, #005bb5)',
             },
             colors: {
-              'warm-earth': '#b45309',
-              'soft-sand': '#fef3c7',
+              'primary-blue': '#0082e4',
+              'primary-light': '#66b3ff',
+              'primary-dark': '#005bb5',
+              'soft-cream': '#FFF8E1',
+              // Remove warm-earth and soft-sand, replace all uses below
             },
           },
         },
       };
     </script>
 </head>
-<body class="bg-[#FFF7EB] text-stone-800 font-sans">
+<body class="bg-soft-cream text-stone-800 font-sans">
     <custom-navbar></custom-navbar>
     <style>
       .nav-transition {
@@ -42,20 +132,16 @@
         <div class="flex justify-between items-center py-4">
           <!-- Logo -->
           <a href="index.html" class="flex items-center space-x-3">
-            <div class="w-10 h-10 bg-amber-600 rounded-full flex items-center justify-center">
-              <i data-feather="home" class="text-white"></i>
+            <div class="w-10 h-10 flex items-center justify-center overflow-hidden">
+              <img src="/content/logo.png" alt="2 Brothers Excavation Logo" class="w-full h-full object-contain">
             </div>
-            <span class="text-xl font-bold text-stone-800">EarthMovers Pro</span>
+            <span class="text-xl font-bold text-stone-800">2BrothersExcavation</span>
           </a>
 
           <!-- Desktop Menu -->
           <div class="hidden md:flex items-center space-x-8">
-            <a href="index.html" class="text-amber-800 hover:text-amber-600 font-medium transition-colors">Home</a>
-            <a href="services.html" class="text-amber-800 hover:text-amber-600 font-medium transition-colors">Services</a>
-            <a href="about.html" class="text-amber-800 hover:text-amber-600 font-medium transition-colors">About Us</a>
-            <a href="portfolio.html" class="text-amber-800 hover:text-amber-600 font-medium transition-colors">Portfolio</a>
-            <a href="contact.html" class="bg-amber-600 hover:bg-amber-700 text-white px-6 py-2 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105">
-              Get Quote
+            <a href="index.html" class="bg-primary-blue hover:bg-primary-dark text-white px-6 py-2 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105">
+              Home
             </a>
           </div>
 
@@ -66,45 +152,41 @@
         </div>
 
         <!-- Mobile Menu -->
-        <div id="mobile-menu" class="md:hidden hidden mobile-menu border-t border-amber-100 py-4">
+        <div id="mobile-menu" class="md:hidden hidden mobile-menu border-t border-primary-light py-4">
           <div class="flex flex-col space-y-4">
-            <a href="index.html" class="text-amber-800 hover:text-amber-600 font-medium transition-colors">Home</a>
-            <a href="services.html" class="text-amber-800 hover:text-amber-600 font-medium transition-colors">Services</a>
-            <a href="about.html" class="text-amber-800 hover:text-amber-600 font-medium transition-colors">About Us</a>
-            <a href="portfolio.html" class="text-amber-800 hover:text-amber-600 font-medium transition-colors">Portfolio</a>
-            <a href="contact.html" class="bg-amber-600 hover:bg-amber-700 text-white px-4 py-2 rounded-lg font-semibold text-center transition-colors">
-              Get Quote
-            </a>
+            <a href="index.html" class="text-primary-dark hover:text-primary-blue font-medium transition-colors">Home</a>
           </div>
         </div>
       </div>
     </nav>
 
 
-    <!-- Contact Form Section (Warm, Welcoming) -->
-    <section class="w-full py-28 px-4 flex justify-center items-center bg-transparent">
-      <div class="w-full max-w-3xl bg-amber-600 rounded-2xl shadow-2xl shadow-amber-700/40 p-8 md:p-12">
+    <!-- Contact Form Section (Blue Palette, with logo watermark) -->
+    <section class="w-full py-28 px-4 flex justify-center items-center bg-transparent relative">
+      <div class="w-full max-w-3xl bg-primary-blue rounded-2xl shadow-2xl shadow-primary-dark/40 p-8 md:p-12 relative overflow-hidden">
+        <!-- Watermark logo behind form -->
+        <img src="images/logo-2.png" alt="Watermark Logo" class="absolute top-4 right-4 w-24 h-24 opacity-10 pointer-events-none select-none" />
         <h2 class="text-3xl md:text-4xl font-bold text-white mb-2 text-center">We'd Love to Hear From You</h2>
-        <p class="text-lg text-light-grey mb-8 text-center">Reach out for a quote, ask a question, or just say hello. Our friendly team is ready to help!</p>
+        <p class="text-lg text-blue-200 mb-8 text-center">Reach out for a quote, ask a question, or just say hello. Our friendly team is ready to help!</p>
         <form class="space-y-6" autocomplete="off">
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
             <!-- Name Field -->
             <div class="flex flex-col">
-              <label for="name" class="mb-2 font-semibold text-amber-900">Name</label>
+              <label for="name" class="mb-2 font-semibold text-primary-dark">Name</label>
               <input type="text" id="name" name="name" required
-                class="rounded-lg border border-amber-200 focus:border-amber-500 focus:ring-2 focus:ring-amber-200 bg-white px-4 py-3 text-stone-800 placeholder-stone-400 transition-all duration-200 outline-none" placeholder="Your Name">
+                class="rounded-lg border border-primary-light focus:border-primary-light focus:ring-2 focus:ring-primary-light bg-white px-4 py-3 text-primary-dark placeholder-primary-light transition-all duration-200 outline-none" placeholder="Your Name">
             </div>
             <!-- Email Field -->
             <div class="flex flex-col">
-              <label for="email" class="mb-2 font-semibold text-amber-900">Email</label>
+              <label for="email" class="mb-2 font-semibold text-primary-dark">Email</label>
               <input type="email" id="email" name="email" required
-                class="rounded-lg border border-amber-200 focus:border-amber-500 focus:ring-2 focus:ring-amber-200 bg-white px-4 py-3 text-stone-800 placeholder-stone-400 transition-all duration-200 outline-none" placeholder="you@email.com">
+                class="rounded-lg border border-primary-light focus:border-primary-light focus:ring-2 focus:ring-primary-light bg-white px-4 py-3 text-primary-dark placeholder-primary-light transition-all duration-200 outline-none" placeholder="you@email.com">
             </div>
             <!-- Services Dropdown -->
             <div class="flex flex-col">
-              <label for="service" class="mb-2 font-semibold text-amber-900">Service Interested In</label>
+              <label for="service" class="mb-2 font-semibold text-primary-dark">Service Interested In</label>
               <select id="service" name="service"
-                class="rounded-lg border border-amber-200 focus:border-amber-500 focus:ring-2 focus:ring-amber-200 bg-white px-4 py-3 text-stone-800 transition-all duration-200 outline-none">
+                class="rounded-lg border border-primary-light focus:border-primary-light focus:ring-2 focus:ring-primary-light bg-white px-4 py-3 text-primary-dark transition-all duration-200 outline-none">
                 <option value="">Select a Service</option>
                 <option value="site-prep">Site Prep</option>
                 <option value="grading">Grading</option>
@@ -115,22 +197,22 @@
             </div>
             <!-- Address Field -->
             <div class="flex flex-col">
-              <label for="address" class="mb-2 font-semibold text-amber-900">Address</label>
+              <label for="address" class="mb-2 font-semibold text-primary-dark">Address</label>
               <input type="text" id="address" name="address"
-                class="rounded-lg border border-amber-200 focus:border-amber-500 focus:ring-2 focus:ring-amber-200 bg-white px-4 py-3 text-stone-800 placeholder-stone-400 transition-all duration-200 outline-none" placeholder="Project Address">
+                class="rounded-lg border border-primary-light focus:border-primary-light focus:ring-2 focus:ring-primary-light bg-white px-4 py-3 text-primary-dark placeholder-primary-light transition-all duration-200 outline-none" placeholder="Project Address">
             </div>
           </div>
           <!-- Message Field -->
           <div class="flex flex-col">
-            <label for="message" class="mb-2 font-semibold text-amber-900">Message</label>
+            <label for="message" class="mb-2 font-semibold text-primary-dark">Message</label>
             <textarea id="message" name="message" rows="5" required
-              class="rounded-lg border border-amber-200 focus:border-amber-500 focus:ring-2 focus:ring-amber-200 bg-white px-4 py-3 text-stone-800 placeholder-stone-400 transition-all duration-200 outline-none resize-y"
+              class="rounded-lg border border-primary-light focus:border-primary-light focus:ring-2 focus:ring-primary-light bg-white px-4 py-3 text-primary-dark placeholder-primary-light transition-all duration-200 outline-none resize-y"
               placeholder="Tell us about your project or ask a question..."></textarea>
           </div>
           <!-- Submit Button -->
           <div class="flex justify-center">
             <button type="submit"
-              class="bg-gradient-to-r from-amber-400 to-amber-600 hover:from-amber-500 hover:to-amber-700 text-white font-bold py-3 px-8 rounded-lg shadow-md transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-amber-300">
+              class="bg-gradient-to-r from-primary-light to-primary-blue hover:from-primary-blue hover:to-primary-dark text-white font-bold py-3 px-8 rounded-lg shadow-md transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-primary-light">
               Send Message
             </button>
           </div>
@@ -143,28 +225,28 @@
         transition: all 0.3s ease;
       }
     </style>
-    <footer class="bg-stone-800 text-white footer-transition">
+    <footer class="bg-primary-dark text-white footer-transition">
       <div class="container mx-auto px-6 py-12">
         <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
           <!-- Company Info -->
           <div class="md:col-span-2">
             <div class="flex items-center space-x-3 mb-6">
-              <div class="w-8 h-8 bg-amber-600 rounded-full flex items-center justify-center">
-                <i data-feather="home" class="text-white"></i>
+              <div class="w-8 h-8 flex items-center justify-center">
+                <img src="content/logo-2.png" alt="2 Brothers Excavation Logo" class="w-6 h-6 object-contain"/>
               </div>
-              <span class="text-2xl font-bold">EarthMovers Pro</span>
+              <span class="text-2xl font-bold">2 Brothers Excavation</span>
             </div>
-            <p class="text-stone-300 mb-6 max-w-md">
+            <p class="text-blue-300 mb-6 max-w-md">
               Building stronger foundations for our community since 2003. Your trusted partner for all excavation needs.
             </p>
             <div class="flex space-x-4">
-              <a href="#" class="w-10 h-10 bg-stone-700 hover:bg-amber-600 rounded-full flex items-center justify-center transition-colors">
+              <a href="#" class="w-10 h-10 bg-primary-blue hover:bg-primary-light rounded-full flex items-center justify-center transition-colors">
                 <i data-feather="facebook"></i>
               </a>
-              <a href="#" class="w-10 h-10 bg-stone-700 hover:bg-amber-600 rounded-full flex items-center justify-center transition-colors">
+              <a href="#" class="w-10 h-10 bg-primary-blue hover:bg-primary-light rounded-full flex items-center justify-center transition-colors">
                 <i data-feather="twitter"></i>
               </a>
-              <a href="#" class="w-10 h-10 bg-stone-700 hover:bg-amber-600 rounded-full flex items-center justify-center transition-colors">
+              <a href="#" class="w-10 h-10 bg-primary-blue hover:bg-primary-light rounded-full flex items-center justify-center transition-colors">
                 <i data-feather="instagram"></i>
               </a>
             </div>
@@ -174,18 +256,18 @@
           <div>
             <h3 class="text-lg font-semibold mb-6">Quick Links</h3>
             <div class="space-y-3">
-              <a href="index.html" class="block text-stone-300 hover:text-white transition-colors">Home</a>
-              <a href="services.html" class="block text-stone-300 hover:text-white transition-colors">Services</a>
-              <a href="about.html" class="block text-stone-300 hover:text-white transition-colors">About Us</a>
-              <a href="portfolio.html" class="block text-stone-300 hover:text-white transition-colors">Portfolio</a>
-              <a href="contact.html" class="block text-stone-300 hover:text-white transition-colors">Contact</a>
+              <a href="index.html" class="block text-blue-300 hover:text-white transition-colors">Home</a>
+              <a href="services.html" class="block text-blue-300 hover:text-white transition-colors">Services</a>
+              <a href="about.html" class="block text-blue-300 hover:text-white transition-colors">About Us</a>
+              <a href="portfolio.html" class="block text-blue-300 hover:text-white transition-colors">Portfolio</a>
+              <a href="contact.html" class="block text-blue-300 hover:text-white transition-colors">Contact</a>
             </div>
           </div>
 
           <!-- Contact Info -->
           <div>
             <h3 class="text-lg font-semibold mb-6">Contact Us</h3>
-            <div class="space-y-3 text-stone-300">
+            <div class="space-y-3 text-blue-300">
               <div class="flex items-center space-x-2">
                 <i data-feather="phone"></i>
                 <span>(555) 123-4567</span>
@@ -203,12 +285,12 @@
         </div>
 
         <!-- Bottom Bar -->
-        <div class="border-t border-stone-700 pt-8 mt-8">
+        <div class="border-t border-primary-blue pt-8 mt-8">
           <div class="flex flex-col md:flex-row justify-between items-center">
-            <p class="text-stone-400 text-sm mb-4 md:mb-0">
+            <p class="text-blue-300 text-sm mb-4 md:mb-0">
               © 2024 EarthMovers Pro. All rights reserved.
             </p>
-            <div class="flex space-x-6 text-sm text-stone-400">
+            <div class="flex space-x-6 text-sm text-blue-300">
               <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
               <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
             </div>

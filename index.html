@@ -1,9 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EarthMovers Pro - Professional Excavation Services</title>
+  
+    <!-- Primary Title & Description -->
+    <title>2 Brothers Excavation | Excavation, Dirt Work & Site Prep in Clear Creek, Gilpin, Summit & Grand Counties</title>
+    <meta name="description" content="2 Brothers Excavation provides expert excavation, dirt work, grading, site preparation, and septic services for homeowners, small projects, and general contractors across Clear Creek, Gilpin, Summit, and Grand Counties.">
+  
+    <!-- Keywords (not heavily used by Google but still ok to include) -->
+    <meta name="keywords" content="excavation, dirt work, grading, site preparation, septic services, Clear Creek County, Gilpin County, Summit County, Grand County, homeowners, small projects, general contractors">
+  
+    <!-- Author & Robots -->
+    <meta name="author" content="2 Brothers Excavation">
+    <meta name="robots" content="index, follow">
+  
+    <!-- Open Graph / Facebook -->
+    <meta property="og:title" content="2 Brothers Excavation | Excavation & Dirt Work in Colorado">
+    <meta property="og:description" content="Providing excavation, grading, site prep, and septic services for homeowners and contractors in Clear Creek, Gilpin, Summit & Grand Counties.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.2brothersexcavation.com">
+    <meta property="og:image" content="https://www.2brothersexcavation.com/content/heroPic.jpeg">
+  
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="2 Brothers Excavation | Excavation & Dirt Work in Colorado">
+    <meta name="twitter:description" content="Expert excavation, grading, site prep, and septic services for homeowners and general contractors across Clear Creek, Gilpin, Summit & Grand Counties.">
+    <meta name="twitter:image" content="https://www.2brothersexcavation.com/content/heroPic.jpeg">
+  
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.2brothersexcavation.com">
+  
+    <!-- Favicon -->
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+  
+    <!-- Structured Data (JSON-LD) for LocalBusiness -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "2 Brothers Excavation",
+      "image": "https://www.2brothersexcavation.com/content/heroPic.jpeg",
+      "url": "https://www.2brothersexcavation.com",
+      "telephone": "(555) 123-4567",
+      "email": "hello@2brothersexcavation.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "123 Construction Way",
+        "addressLocality": "Dumond",
+        "addressRegion": "CO",
+        "postalCode": "80436",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 39.766, 
+        "longitude": -105.515
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+          ],
+          "opens": "07:00",
+          "closes": "18:00"
+        }
+      ],
+      "sameAs": [
+        "https://www.facebook.com/2BrotherExcavation",
+        "https://www.twitter.com/2BrotherExcavation",
+        "https://www.instagram.com/2BrotherExcavation"
+      ],
+      "priceRange": "$$",
+      "description": "Expert excavation, dirt work, grading, site preparation, and septic services for homeowners, small projects, and general contractors across Clear Creek, Gilpin, Summit, and Grand Counties."
+    }
+    </script>
+  
+    <!-- Tailwind + Feather Icons -->
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+  
+  </head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excavation & Trenching | 2Brothers Excavation</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
@@ -15,19 +102,22 @@
             backgroundImage: {
               // custom background example
               'excavation-hero': "url('images/excavation-bg.jpg')",
-              'gradient-warm': "linear-gradient(to bottom right, #f59e0b, #b45309)",
-              'cream-gradient': 'linear-gradient(to bottom, #FFF8E1, #FBE4C4, #EED3A7)',
+              'gradient-cool': "linear-gradient(to bottom right, #66b3ff, #0082e4)",
+              'blue-gradient': 'linear-gradient(to bottom, #66b3ff, #0082e4, #005bb5)',
             },
             colors: {
-              'warm-earth': '#b45309',
-              'soft-sand': '#fef3c7',
+              'primary-blue': '#0082e4',
+              'primary-light': '#66b3ff',
+              'primary-dark': '#005bb5',
+              'soft-cream': '#FFF8E1',
+              // Remove warm-earth and soft-sand, replace all uses below
             },
           },
         },
       };
     </script>
 </head>
-<body class="bg-[#FFF7EB] text-stone-800 font-sans">
+<body class="bg-soft-cream text-stone-800 font-sans">
     <custom-navbar></custom-navbar>
     <style>
       .nav-transition {
@@ -42,16 +132,15 @@
         <div class="flex justify-between items-center py-4">
           <!-- Logo -->
           <a href="index.html" class="flex items-center space-x-3">
-            <div class="w-10 h-10 bg-amber-600 rounded-full flex items-center justify-center">
-              <i data-feather="home" class="text-white"></i>
+            <div class="w-10 h-10 flex items-center justify-center overflow-hidden">
+              <img src="/content/logo.png" alt="2 Brothers Excavation Logo" class="w-full h-full object-contain">
             </div>
-            <span class="text-xl font-bold text-stone-800">EarthMovers Pro</span>
+            <span class="text-xl font-bold text-stone-800">2BrothersExcavation</span>
           </a>
 
           <!-- Desktop Menu -->
           <div class="hidden md:flex items-center space-x-8">
-            <a href="index.html" class="text-amber-800 hover:text-amber-600 font-medium transition-colors">Home</a>
-            <a href="contact.html" class="bg-amber-600 hover:bg-amber-700 text-white px-6 py-2 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105">
+            <a href="contact.html" class="bg-primary-blue hover:bg-primary-dark text-white px-6 py-2 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105">
               Get Quote
             </a>
           </div>
@@ -63,10 +152,9 @@
         </div>
 
         <!-- Mobile Menu -->
-        <div id="mobile-menu" class="md:hidden hidden mobile-menu border-t border-amber-100 py-4">
+        <div id="mobile-menu" class="md:hidden hidden mobile-menu border-t border-primary-light py-4">
           <div class="flex flex-col space-y-4">
-            <a href="index.html" class="text-amber-800 hover:text-amber-600 font-medium transition-colors">Home</a>
-            <a href="contact.html" class="bg-amber-600 hover:bg-amber-700 text-white px-4 py-2 rounded-lg font-semibold text-center transition-colors">
+            <a href="contact.html" class="bg-primary-blue hover:bg-primary-dark text-white px-4 py-2 rounded-lg font-semibold text-center transition-colors">
               Get Quote
             </a>
           </div>
@@ -75,22 +163,24 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="relative h-screen bg-cream-200 overflow-hidden">
-        <div class="absolute inset-0 bg-amber-900/30 z-10"></div>
+    <section class="relative h-screen overflow-hidden">
+        <div class="absolute inset-0 bg-black/30 z-10"></div>
         <img src="/content/heroPic.jpeg" alt="Excavation site at sunrise" class="absolute inset-0 w-full h-full object-cover">
         
         <div class="relative z-20 container mx-auto px-6 h-full flex items-center">
-            <div class="max-w-2xl text-white">
-                <h1 class="text-5xl md:text-7xl font-bold mb-6 leading-tight">Moving Earth, Building Futures</h1>
-                <p class="text-xl md:text-2xl mb-8 text-amber-100">Trusted excavation services with over 20 years of experience in our community</p>
-                <a href="contact.html" class="inline-block bg-amber-600 hover:bg-amber-700 text-white font-semibold px-8 py-4 rounded-lg shadow-lg transition-all duration-300 transform hover:scale-105 text-lg">
-                    Get a Free Quote
-                </a>
+            <div class="max-w-2xl text-white text-center">
+                <h1 class="text-5xl md:text-7xl font-bold mb-6 text-center leading-tight">Moving Earth, Building Futures</h1>
+                <p class="text-xl md:text-2xl mb-8 text-primary-light text-center">Trusted excavation services with over 20 years of experience in our community</p>
+                <div class="flex justify-center">
+                    <a href="contact.html" class="inline-block bg-primary-blue hover:bg-primary-dark text-white font-semibold px-8 py-4 rounded-lg shadow-lg transition-all duration-300 transform hover:scale-105 text-lg">
+                        Get a Free Quote
+                    </a>
+                </div>
             </div>
         </div>
     </section>
 
-    <section class="py-20 bg-cream-gradient">
+    <section class="py-20 bg-white">
       <div class="container mx-auto px-6">
         <div class="text-center mb-12">
           <h2 class="text-4xl font-bold text-stone-800 mb-4">Specialized Services</h2>
@@ -99,36 +189,61 @@
           </p>
         </div>
     
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 justify-items-center">
+  
           <!-- Trenching Card -->
-          <a href="contact.html" class="group bg-amber-50 hover:bg-amber-100 shadow-lg hover:shadow-2xl transition-all duration-300 rounded-xl p-8 flex flex-col items-start">
-            <div class="w-16 h-16 bg-amber-200 rounded-full flex items-center justify-center mb-6 transition-transform duration-300 group-hover:scale-110">
-              <i data-feather="tool" class="text-amber-600"></i>
+          <a href="contact.html" class="group bg-primary-light/10 hover:bg-primary-light/30 shadow-lg hover:shadow-2xl transition-all duration-300 rounded-xl p-8 flex flex-col items-start">
+            <div class="w-16 h-16 bg-primary-light rounded-full flex items-center justify-center mb-6 transition-transform duration-300 group-hover:scale-110">
+              <i data-feather="tool" class="text-primary-blue"></i>
             </div>
-            <h3 class="text-2xl font-bold text-stone-800 mb-3 group-hover:text-amber-700 transition-colors">Trenching for Conduit</h3>
+            <h3 class="text-2xl font-bold text-stone-800 mb-3 group-hover:text-primary-blue transition-colors">Trenching & Conduit Work</h3>
             <p class="text-stone-600 mb-4">
-              Expert trenching services for laying electrical or communication conduit, ensuring precise depth and alignment.
+              Expert trenching for electrical, communication, or utility conduit across Clear Creek, Gilpin, Summit, and Grand Counties. Perfect for homeowners and small projects.
             </p>
-            <span class="text-amber-600 font-semibold group-hover:underline">Get a Quote →</span>
+            <span class="text-primary-blue font-semibold group-hover:underline">Get a Quote →</span>
+          </a>
+        
+          <!-- Grading & Site Prep Card -->
+          <a href="contact.html" class="group bg-primary-light/10 hover:bg-primary-light/30 shadow-lg hover:shadow-2xl transition-all duration-300 rounded-xl p-8 flex flex-col items-start">
+            <div class="w-16 h-16 bg-primary-light rounded-full flex items-center justify-center mb-6 transition-transform duration-300 group-hover:scale-110">
+              <i data-feather="layers" class="text-primary-blue"></i>
+            </div>
+            <h3 class="text-2xl font-bold text-stone-800 mb-3 group-hover:text-primary-blue transition-colors">Grading & Site Preparation</h3>
+            <p class="text-stone-600 mb-4">
+              Leveling, grading, and preparing sites for construction or landscaping projects. Serving homeowners and general contractors in Clear Creek, Gilpin, Summit, and Grand Counties.
+            </p>
+            <span class="text-primary-blue font-semibold group-hover:underline">Get a Quote →</span>
+          </a>
+        
+          <!-- Septic Services Card -->
+          <a href="contact.html" class="group bg-primary-light/10 hover:bg-primary-light/30 shadow-lg hover:shadow-2xl transition-all duration-300 rounded-xl p-8 flex flex-col items-start">
+            <div class="w-16 h-16 bg-primary-light rounded-full flex items-center justify-center mb-6 transition-transform duration-300 group-hover:scale-110">
+              <i data-feather="droplet" class="text-primary-blue"></i>
+            </div>
+            <h3 class="text-2xl font-bold text-stone-800 mb-3 group-hover:text-primary-blue transition-colors">Septic Installation & Maintenance</h3>
+            <p class="text-stone-600 mb-4">
+              Full-service septic system installation, repair, and maintenance for residential and small commercial projects throughout Clear Creek, Gilpin, Summit, and Grand Counties.
+            </p>
+            <span class="text-primary-blue font-semibold group-hover:underline">Get a Quote →</span>
           </a>
     
           <!-- Missiling / Drilling Card -->
-          <a href="contact.html" class="group bg-amber-50 hover:bg-amber-100 shadow-lg hover:shadow-2xl transition-all duration-300 rounded-xl p-8 flex flex-col items-start">
-            <div class="w-16 h-16 bg-amber-200 rounded-full flex items-center justify-center mb-6 transition-transform duration-300 group-hover:scale-110">
-              <i data-feather="feather" class="text-amber-600"></i>
+          <a href="contact.html" class="group bg-primary-light/10 hover:bg-primary-light/30 shadow-lg hover:shadow-2xl transition-all duration-300 rounded-xl p-8 flex flex-col items-start">
+            <div class="w-16 h-16 bg-primary-light rounded-full flex items-center justify-center mb-6 transition-transform duration-300 group-hover:scale-110">
+              <i data-feather="feather" class="text-primary-blue"></i>
             </div>
-            <h3 class="text-2xl font-bold text-stone-800 mb-3 group-hover:text-amber-700 transition-colors">Missiling / Drilling</h3>
+            <h3 class="text-2xl font-bold text-stone-800 mb-3 group-hover:text-primary-blue transition-colors">Missiling / Drilling</h3>
             <p class="text-stone-600 mb-4">
               Specialized drilling to create holes for foundations, utilities, or other subsurface installations.
             </p>
-            <span class="text-amber-600 font-semibold group-hover:underline">Get a Quote →</span>
+            <span class="text-primary-blue font-semibold group-hover:underline">Get a Quote →</span>
           </a>
         </div>
       </div>
     </section>
 
     <!-- Why Choose Us -->
-    <section class="py-20 cream-gradient">
+    <section class="py-20 gradient-cool">
         <div class="container mx-auto px-6">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                 <div>
@@ -137,16 +252,16 @@
                     
                     <div class="space-y-6">
                         <div class="flex items-start space-x-4">
-                            <div class="w-12 h-12 bg-amber-500 rounded-full flex items-center justify-center flex-shrink-0">
+                            <div class="w-12 h-12 bg-primary-blue rounded-full flex items-center justify-center flex-shrink-0">
                                 <i data-feather="award" class="text-white"></i>
                             </div>
                             <div>
-                                <h3 class="text-xl font-semibold text-stone-800 mb-2">20+ Years Experience</h3>
+                                <h3 class="text-xl font-semibold text-stone-800 mb-2">5+ Years Experience</h3>
                             </div>
                         </div>
                         
                         <div class="flex items-start space-x-4">
-                            <div class="w-12 h-12 bg-amber-500 rounded-full flex items-center justify-center flex-shrink-0">
+                            <div class="w-12 h-12 bg-primary-blue rounded-full flex items-center justify-center flex-shrink-0">
                                 <i data-feather="shield" class="text-white"></i>
                             </div>
                             <div>
@@ -155,7 +270,7 @@
                         </div>
                         
                         <div class="flex items-start space-x-4">
-                            <div class="w-12 h-12 bg-amber-500 rounded-full flex items-center justify-center flex-shrink-0">
+                            <div class="w-12 h-12 bg-primary-blue rounded-full flex items-center justify-center flex-shrink-0">
                                 <i data-feather="users" class="text-white"></i>
                             </div>
                             <div>
@@ -167,20 +282,20 @@
                 
                 <div class="relative">
                     <img src="/content/home-page.jpg" alt="Our team at work" class="rounded-2xl shadow-2xl">
-                    <div class="absolute bottom-6 left-6 bg-amber-500 text-white p-6 rounded-2xl shadow-xl">
-                        <p class="text-2xl font-bold">500+</p>
-                        <p class="text-amber-100">Projects Completed</p>
+                    <div class="absolute bottom-6 left-6 bg-primary-blue text-white p-6 rounded-2xl shadow-xl">
+                        <p class="text-2xl font-bold">200+</p>
+                        <p class="text-primary-light">Projects Completed</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="bg-cream-gradient py-28">
+    <section class="bg-white py-28">
       <div class="container mx-auto px-6">
         <!-- Page Header -->
         <div class="text-center mb-12">
-          <h1 class="text-4xl md:text-5xl font-bold text-warm-earth mb-4">About EarthMovers Pro</h1>
+          <h1 class="text-4xl md:text-5xl font-bold text-primary-blue mb-4">About EarthMovers Pro</h1>
           <p class="text-stone-700 max-w-2xl mx-auto text-lg md:text-xl">
             We’re a team of dedicated professionals committed to providing top-tier excavation services, building strong foundations, and delivering excellence on every project.
           </p>
@@ -188,57 +303,57 @@
     
         <!-- Our Mission -->
         <div class="mb-16 text-center">
-          <h2 class="text-3xl font-semibold text-warm-earth mb-4">Our Mission</h2>
+          <h2 class="text-3xl font-semibold text-primary-blue mb-4">Our Mission</h2>
           <p class="text-stone-700 text-lg md:text-base max-w-3xl mx-auto">
             At EarthMovers Pro, our mission is simple: provide reliable, safe, and efficient excavation solutions that exceed expectations. From residential to commercial projects, we combine experience, technology, and passion to ensure every job is done right.
           </p>
         </div>
     
-        <!-- Timeline Section -->
-        <div class="mb-16 max-w-4xl mx-auto">
-          <h2 class="text-3xl font-semibold text-warm-earth text-center mb-8">Our History</h2>
-          <div class="border-l-4 border-amber-600 pl-8">
-            <div class="relative mb-12">
-              <div class="absolute -left-5 top-1/2 -translate-y-1/2 w-12 h-12 bg-amber-600 rounded-full flex items-center justify-center text-white font-bold">2003</div>
-              <h3 class="text-xl font-semibold text-stone-800 mb-1 ml-8">Founded</h3>
-              <p class="text-stone-700 text-sm ml-8">EarthMovers Pro was established, laying the foundation for a trusted excavation company.</p>
-            </div>
-            <div class="relative mb-12">
-              <div class="absolute -left-5 top-1/2 -translate-y-1/2 w-12 h-12 bg-amber-600 rounded-full flex items-center justify-center text-white font-bold">2010</div>
-              <h3 class="text-xl font-semibold text-stone-800 mb-1 ml-8">Expansion</h3>
-              <p class="text-stone-700 text-sm ml-8">Expanded services to include commercial excavation and heavy machinery operations.</p>
-            </div>
-            <div class="relative mb-12">
-              <div class="absolute -left-5 top-1/2 -translate-y-1/2 w-12 h-12 bg-amber-600 rounded-full flex items-center justify-center text-white font-bold">2018</div>
-              <h3 class="text-xl font-semibold text-stone-800 mb-1 ml-8">Technology Integration</h3>
-              <p class="text-stone-700 text-sm ml-8">Adopted advanced excavation technology to improve efficiency and safety.</p>
-            </div>
-            <div class="relative">
-              <div class="absolute -left-5 top-1/2 -translate-y-1/2 w-12 h-12 bg-amber-600 rounded-full flex items-center justify-center text-white font-bold">2024</div>
-              <h3 class="text-xl font-semibold text-stone-800 mb-1 ml-8">Today</h3>
-              <p class="text-stone-700 text-sm ml-8">Continuing to build stronger foundations with a focus on community and quality.</p>
-            </div>
-          </div>
-        </div>
+<!-- Timeline Section -->
+<div class="mb-16 max-w-4xl mx-auto">
+  <h2 class="text-3xl font-semibold text-primary-blue text-center mb-8">Our History</h2>
+  <div class="border-l-4 border-primary-blue pl-8">
+    <div class="relative mb-12">
+      <div class="absolute -left-5 top-1/2 -translate-y-1/2 w-12 h-12 bg-primary-blue rounded-full flex items-center justify-center text-white font-bold text-center">Jan '24</div>
+      <h3 class="text-xl font-semibold text-stone-800 mb-1 ml-8">Company Founded</h3>
+      <p class="text-stone-700 text-sm ml-8">2 Brothers Excavation was founded and began operations in Clear Creek County.</p>
+    </div>
+    <div class="relative mb-12">
+      <div class="absolute -left-5 top-1/2 -translate-y-1/2 w-12 h-12 bg-primary-blue rounded-full flex items-center justify-center text-white font-bold text-center">Apr '24</div>
+      <h3 class="text-xl font-semibold text-stone-800 mb-1 ml-8">First Job Completed</h3>
+      <p class="text-stone-700 text-sm ml-8">Completed our first excavation and grading project successfully.</p>
+    </div>
+    <div class="relative mb-12">
+      <div class="absolute -left-5 top-1/2 -translate-y-1/2 w-12 h-12 bg-primary-blue rounded-full flex items-center justify-center text-white font-bold text-center">Aug '24</div>
+      <h3 class="text-xl font-semibold text-stone-800 mb-1 ml-8">Expanded Services</h3>
+      <p class="text-stone-700 text-sm ml-8">Started offering septic services alongside excavation and grading.</p>
+    </div>
+    <div class="relative">
+      <div class="absolute -left-5 top-1/2 -translate-y-1/2 w-12 h-12 bg-primary-blue rounded-full flex items-center justify-center text-white font-bold text-center">Nov '24</div>
+      <h3 class="text-xl font-semibold text-stone-800 mb-1 ml-8">Today</h3>
+      <p class="text-stone-700 text-sm ml-8">Continuing to grow and serve clients across Clear Creek, Gilpin, Summit, and Grand Counties.</p>
+    </div>
+  </div>
+</div>
 
     
         <!-- Values Section -->
         <div class="mt-16 text-center">
-          <h2 class="text-3xl font-semibold text-warm-earth mb-4">What We Stand For</h2>
+          <h2 class="text-3xl font-semibold text-primary-blue mb-4">What We Stand For</h2>
           <p class="text-stone-700 text-lg md:text-base max-w-3xl mx-auto mb-6">
             Safety, integrity, and excellence guide every project we take on. We treat our clients like partners and aim to build long-term relationships rooted in trust and reliability.
           </p>
           <div class="flex flex-col sm:flex-row sm:justify-center gap-6">
             <div class="bg-white p-6 rounded-lg shadow-md flex-1 hover:shadow-xl transition-shadow">
-              <h3 class="text-xl font-semibold mb-2 text-amber-600">Safety First</h3>
+              <h3 class="text-xl font-semibold mb-2 text-primary-blue">Safety First</h3>
               <p class="text-stone-600 text-sm">Every site and every task is approached with rigorous safety protocols.</p>
             </div>
             <div class="bg-white p-6 rounded-lg shadow-md flex-1 hover:shadow-xl transition-shadow">
-              <h3 class="text-xl font-semibold mb-2 text-amber-600">Precision Work</h3>
+              <h3 class="text-xl font-semibold mb-2 text-primary-blue">Precision Work</h3>
               <p class="text-stone-600 text-sm">From small trenches to large-scale digs, precision and attention to detail are our hallmark.</p>
             </div>
             <div class="bg-white p-6 rounded-lg shadow-md flex-1 hover:shadow-xl transition-shadow">
-              <h3 class="text-xl font-semibold mb-2 text-amber-600">Community Focus</h3>
+              <h3 class="text-xl font-semibold mb-2 text-primary-blue">Community Focus</h3>
               <p class="text-stone-600 text-sm">We believe in building stronger foundations for our clients and the community we serve.</p>
             </div>
           </div>
@@ -258,7 +373,7 @@
           <!-- Company Info -->
           <div class="md:col-span-2">
             <div class="flex items-center space-x-3 mb-6">
-              <div class="w-8 h-8 bg-amber-600 rounded-full flex items-center justify-center">
+              <div class="w-8 h-8 bg-primary-blue rounded-full flex items-center justify-center">
                 <i data-feather="home" class="text-white"></i>
               </div>
               <span class="text-2xl font-bold">EarthMovers Pro</span>
@@ -267,13 +382,13 @@
               Building stronger foundations for our community since 2003. Your trusted partner for all excavation needs.
             </p>
             <div class="flex space-x-4">
-              <a href="#" class="w-10 h-10 bg-stone-700 hover:bg-amber-600 rounded-full flex items-center justify-center transition-colors">
+              <a href="#" class="w-10 h-10 bg-stone-700 hover:bg-primary-blue rounded-full flex items-center justify-center transition-colors">
                 <i data-feather="facebook"></i>
               </a>
-              <a href="#" class="w-10 h-10 bg-stone-700 hover:bg-amber-600 rounded-full flex items-center justify-center transition-colors">
+              <a href="#" class="w-10 h-10 bg-stone-700 hover:bg-primary-blue rounded-full flex items-center justify-center transition-colors">
                 <i data-feather="twitter"></i>
               </a>
-              <a href="#" class="w-10 h-10 bg-stone-700 hover:bg-amber-600 rounded-full flex items-center justify-center transition-colors">
+              <a href="#" class="w-10 h-10 bg-stone-700 hover:bg-primary-blue rounded-full flex items-center justify-center transition-colors">
                 <i data-feather="instagram"></i>
               </a>
             </div>

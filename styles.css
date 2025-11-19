@@ -62,3 +62,10 @@ body {
     max-height: 90%;
     border-radius: 8px;
 }
+/* Center the last card if odd number of items on md+ screens */
+@media (min-width: 768px) {
+    .grid > a:last-child:nth-child(odd) {
+      grid-column: 1 / -1; /* spans both columns */
+      justify-self: center; /* optional, centers the card itself */
+    }
+  }
