@@ -163,11 +163,11 @@
 
     <!-- Contact Form Section (Blue Palette, with logo watermark) -->
     <section class="w-full py-28 px-4 flex justify-center items-center bg-transparent relative">
-      <div class="w-full max-w-3xl bg-primary-blue rounded-2xl shadow-2xl shadow-primary-dark/40 p-8 md:p-12 relative overflow-hidden">
+      <div class="w-full max-w-3xl bg-blue-gradient rounded-2xl shadow-2xl shadow-primary-dark/40 p-8 md:p-12 relative overflow-hidden z-20">
         <!-- Watermark logo behind form -->
-        <img src="images/logo-2.png" alt="Watermark Logo" class="absolute top-4 right-4 w-24 h-24 opacity-10 pointer-events-none select-none" />
-        <h2 class="text-3xl md:text-4xl font-bold text-white mb-2 text-center">We'd Love to Hear From You</h2>
-        <p class="text-lg text-blue-200 mb-8 text-center">Reach out for a quote, ask a question, or just say hello. Our friendly team is ready to help!</p>
+        <img src="content/logo-2.png" alt="Watermark Logo" class="absolute top-4 right-4 w-44 h-52 opacity-60 pointer-events-none select-none z-10" />
+        <h2 class="text-3xl md:text-4xl font-bold text-white mb-2 text-center relative z-20">We'd Love to Hear From You</h2>
+        <p class="text-lg text-blue-200 mb-8 text-center relative z-20">Reach out for a quote, ask a question, or just say hello. Our friendly team is ready to help!</p>
         <form class="space-y-6" autocomplete="off">
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
             <!-- Name Field -->
@@ -219,34 +219,33 @@
         </form>
       </div>
     </section>
-    <custom-footer></custom-footer>
     <style>
       .footer-transition {
         transition: all 0.3s ease;
       }
     </style>
-    <footer class="bg-primary-dark text-white footer-transition">
+    <footer class="bg-stone-800 text-white footer-transition">
       <div class="container mx-auto px-6 py-12">
         <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
           <!-- Company Info -->
           <div class="md:col-span-2">
             <div class="flex items-center space-x-3 mb-6">
-              <div class="w-8 h-8 flex items-center justify-center">
-                <img src="content/logo-2.png" alt="2 Brothers Excavation Logo" class="w-6 h-6 object-contain"/>
+              <div class="w-8 h-8 rounded-full flex items-center justify-center overflow-hidden">
+                <img src="/content/logo.png" alt="Logo" class="w-full h-full object-contain">
               </div>
-              <span class="text-2xl font-bold">2 Brothers Excavation</span>
+              <span class="text-2xl font-bold">EarthMovers Pro</span>
             </div>
-            <p class="text-blue-300 mb-6 max-w-md">
+            <p class="text-stone-300 mb-6 max-w-md">
               Building stronger foundations for our community since 2003. Your trusted partner for all excavation needs.
             </p>
             <div class="flex space-x-4">
-              <a href="#" class="w-10 h-10 bg-primary-blue hover:bg-primary-light rounded-full flex items-center justify-center transition-colors">
+              <a href="#" class="w-10 h-10 bg-stone-700 hover:bg-primary-blue rounded-full flex items-center justify-center transition-colors">
                 <i data-feather="facebook"></i>
               </a>
-              <a href="#" class="w-10 h-10 bg-primary-blue hover:bg-primary-light rounded-full flex items-center justify-center transition-colors">
+              <a href="#" class="w-10 h-10 bg-stone-700 hover:bg-primary-blue rounded-full flex items-center justify-center transition-colors">
                 <i data-feather="twitter"></i>
               </a>
-              <a href="#" class="w-10 h-10 bg-primary-blue hover:bg-primary-light rounded-full flex items-center justify-center transition-colors">
+              <a href="#" class="w-10 h-10 bg-stone-700 hover:bg-primary-blue rounded-full flex items-center justify-center transition-colors">
                 <i data-feather="instagram"></i>
               </a>
             </div>
@@ -256,41 +255,41 @@
           <div>
             <h3 class="text-lg font-semibold mb-6">Quick Links</h3>
             <div class="space-y-3">
-              <a href="index.html" class="block text-blue-300 hover:text-white transition-colors">Home</a>
-              <a href="services.html" class="block text-blue-300 hover:text-white transition-colors">Services</a>
-              <a href="about.html" class="block text-blue-300 hover:text-white transition-colors">About Us</a>
-              <a href="portfolio.html" class="block text-blue-300 hover:text-white transition-colors">Portfolio</a>
-              <a href="contact.html" class="block text-blue-300 hover:text-white transition-colors">Contact</a>
+              <a href="index.html" class="block text-stone-300 hover:text-white transition-colors">Home</a>
+              <a href="#services" class="block text-stone-300 hover:text-white transition-colors">Services</a>
+              <a href="#about" class="block text-stone-300 hover:text-white transition-colors">About Us</a>
+              <a href="contact.html" class="block text-stone-300 hover:text-white transition-colors">Contact</a>
             </div>
           </div>
 
           <!-- Contact Info -->
           <div>
             <h3 class="text-lg font-semibold mb-6">Contact Us</h3>
-            <div class="space-y-3 text-blue-300">
+            <div class="space-y-3 text-stone-300">
               <div class="flex items-center space-x-2">
                 <i data-feather="phone"></i>
-                <span>(555) 123-4567</span>
+                <span>720-434-9633</span>
               </div>
               <div class="flex items-center space-x-2">
                 <i data-feather="mail"></i>
-                <span>hello@earthmoverspro.com</span>
+                <span>twobrothersexcavation720@gmail.com</span>
               </div>
               <div class="flex items-start space-x-2">
                 <i data-feather="map-pin"></i>
-                <span>123 Construction Way, Buildersville, BC</span>
+                <span>185 Dumont ln. 
+                    Dumont CO 80436</span>
               </div>
             </div>
           </div>
         </div>
 
         <!-- Bottom Bar -->
-        <div class="border-t border-primary-blue pt-8 mt-8">
+        <div class="border-t border-stone-700 pt-8 mt-8">
           <div class="flex flex-col md:flex-row justify-between items-center">
-            <p class="text-blue-300 text-sm mb-4 md:mb-0">
+            <p class="text-stone-400 text-sm mb-4 md:mb-0">
               © 2024 EarthMovers Pro. All rights reserved.
             </p>
-            <div class="flex space-x-6 text-sm text-blue-300">
+            <div class="flex space-x-6 text-sm text-stone-400">
               <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
               <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
             </div>
