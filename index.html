@@ -90,7 +90,7 @@
   </head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Excavation & Trenching | 2Brothers Excavation</title>
+    <title>Excavation & Trenching | Two Brothers Excavation</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
@@ -139,22 +139,8 @@
           </a>
 
           <!-- Desktop Menu -->
-          <div class="hidden md:flex items-center space-x-8">
+          <div class="flex items-center space-x-8">
             <a href="contact.html" class="bg-primary-blue hover:bg-primary-dark text-white px-6 py-2 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105">
-              Get Quote
-            </a>
-          </div>
-
-          <!-- Mobile Menu Button -->
-          <button class="md:hidden p-2 rounded-lg hover:bg-stone-100 transition-colors" aria-label="Toggle mobile menu">
-            <i data-feather="menu"></i>
-          </button>
-        </div>
-
-        <!-- Mobile Menu -->
-        <div id="mobile-menu" class="md:hidden hidden mobile-menu border-t border-primary-light py-4">
-          <div class="flex flex-col space-y-4">
-            <a href="contact.html" class="bg-primary-blue hover:bg-primary-dark text-white px-4 py-2 rounded-lg font-semibold text-center transition-colors">
               Get Quote
             </a>
           </div>
@@ -163,22 +149,25 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="relative h-screen overflow-hidden">
-        <div class="absolute inset-0 bg-black/30 z-10"></div>
-        <img src="/content/heroPic.jpeg" alt="Excavation site at sunrise" class="absolute inset-0 w-full h-full object-cover">
-        
-        <div class="relative z-20 container mx-auto px-6 h-full flex items-center">
-            <div class="max-w-2xl text-white text-center">
-                <h1 class="text-5xl md:text-7xl font-bold mb-6 text-center leading-tight">Moving Earth, Building Futures</h1>
-                <p class="text-xl md:text-2xl mb-8 text-primary-light text-center">Trusted excavation services with over 20 years of experience in our community</p>
-                <div class="flex justify-center">
-                    <a href="contact.html" class="inline-block bg-primary-blue hover:bg-primary-dark text-white font-semibold px-8 py-4 rounded-lg shadow-lg transition-all duration-300 transform hover:scale-105 text-lg">
-                        Get a Free Quote
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
+<!-- Hero Section -->
+<section class="relative h-screen overflow-hidden">
+  <img src="/content/equitment-2.jpg" alt="Excavation site at sunrise" class="absolute inset-0 w-full h-full object-cover">
+
+  <!-- Gradient Overlay -->
+  <div class="absolute inset-0 bg-gradient-to-l from-black/90 to-black/10 z-10"></div>
+
+  <div class="relative z-20 container mx-auto px-6 h-full flex items-center justify-end">
+      <div class="max-w-2xl text-white text-right">
+          <h1 class="text-5xl md:text-7xl font-bold mb-6 text-center leading-tight">Moving Earth, Building Futures</h1>
+          <p class="text-xl md:text-2xl mb-8 text-primary-light text-right max-w-lg md:max-w-xl">Trusted excavation services with over 5 years of experience in our community</p>
+          <div class="flex justify-center">
+              <a href="contact.html" class="inline-block bg-primary-blue hover:bg-primary-dark text-white font-semibold px-8 py-4 rounded-lg shadow-lg transition-all duration-300 transform hover:scale-105 text-lg">
+                  Get a Free Quote
+              </a>
+          </div>
+      </div>
+  </div>
+</section>
 
     <section id="services" class="py-20 bg-white">
       <div class="container mx-auto px-6">
@@ -242,6 +231,50 @@
       </div>
     </section>
 
+<!-- Portfolio Section -->
+<!-- Home Services Showcase -->
+<section class="w-full py-20 px-4 flex justify-center items-center bg-transparent relative">
+  <div class="w-full max-w-5xl bg-blue-gradient rounded-2xl shadow-2xl shadow-primary-dark/40 p-8 md:p-12 relative overflow-hidden z-20">
+
+    <!-- Watermark logo behind content -->
+    <img src="content/logo-2.png" alt="Watermark Logo" class="absolute top-4 right-4 w-72 h-96 opacity-80 pointer-events-none select-none z-10" />
+
+    <h2 class="text-3xl md:text-4xl font-bold text-white mb-8 text-center relative z-20">Our Portfolio</h2>
+    <p class="text-lg text-blue-200 mb-12 text-center relative z-20">
+      Take a look at some of our completed projects. From residential digs to large-scale commercial excavation. <br >Click on the cards below to dive in deeper.
+    </p>
+
+    <!-- Simple Card Row -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 relative z-20">
+      <!-- Trenching Card -->
+      <a href="/portfolio.html" class="group bg-white/10 hover:bg-white/20 rounded-xl p-6 flex flex-col items-center text-center transition-all">
+        <img src="content/trenching-1.jpeg" alt="Trenching" class="w-full h-64 object-cover rounded-xl mb-4">
+        <h3 class="text-xl font-semibold text-white mb-2">Trenching</h3>
+        <p class="text-blue-200 text-sm">Electrical, conduit, and utility trenching with precision.</p>
+      </a>
+
+      <!-- Grading Card -->
+      <a href="/portfolio.html" class="group bg-white/10 hover:bg-white/20 rounded-xl p-6 flex flex-col items-center text-center transition-all">
+        <img src="content/site-prep-1.jpeg" alt="Grading" class="w-full h-64 object-cover rounded-xl mb-4">
+        <h3 class="text-xl font-semibold text-white mb-2">Grading</h3>
+        <p class="text-blue-200 text-sm">Leveling and preparing sites for construction or landscaping.</p>
+      </a>
+
+      <!-- Septic Card -->
+      <a href="/portfolio.html" class="group bg-white/10 hover:bg-white/20 rounded-xl p-6 flex flex-col items-center text-center transition-all">
+        <img src="content/equitment-4.jpeg" alt="Septic" class="w-full h-64 object-cover rounded-xl mb-4">
+        <h3 class="text-xl font-semibold text-white mb-2">Equipment & Other Services</h3>
+        <p class="text-blue-200 text-sm">Installation, maintenance, and repair of residential septic systems.</p>
+      </a>
+    </div>
+      <div class="flex justify-center w-full mt-6">
+        <a href="portfolio.html" class="inline-block bg-primary-blue hover:bg-primary-dark text-white font-semibold px-8 py-4 rounded-lg shadow-lg transition-all duration-300 transform hover:scale-105 text-lg">
+            See More Of Our Work
+        </a>
+      </div>
+    
+  </div>
+</section>
     <!-- Why Choose Us -->
     <section  id="about" class="py-20 gradient-cool">
         <div class="container mx-auto px-6">
@@ -281,10 +314,7 @@
                 </div>
                 
                 <div class="relative">
-                    <img src="/content/home-page.jpg" alt="Our team at work" class="rounded-2xl shadow-2xl">
-                    <div class="absolute bottom-6 left-6 bg-primary-blue text-white p-6 rounded-2xl shadow-xl">
-                        <p class="text-2xl font-bold">200+</p>
-                        <p class="text-primary-light">Projects Completed</p>
+                    <img src="/content/site-prep-2.jpeg" alt="Our team at work" class="rounded-2xl shadow-2xl">
                     </div>
                 </div>
             </div>
@@ -442,9 +472,29 @@
     </footer>
 
 
-    <script src="components/navbar.js"></script>
-    <script src="components/footer.js"></script>
-    <script src="script.js"></script>
-    <script>feather.replace();</script>
+</body>
+<script src="components/navbar.js"></script>
+<script src="components/footer.js"></script>
+<script src="script.js"></script>
+<script>feather.replace();</script>
+<script>
+  // Rotate images for all carousel cards
+  document.addEventListener('DOMContentLoaded', () => {
+    const carousels = document.querySelectorAll('.carousel');
+    carousels.forEach(carousel => {
+      const images = carousel.querySelectorAll('.carousel-image');
+      let index = 0;
+      setInterval(() => {
+        images.forEach(img => {
+          img.classList.remove('opacity-100');
+          img.classList.add('opacity-0');
+        });
+        index = (index + 1) % images.length;
+        images[index].classList.remove('opacity-0');
+        images[index].classList.add('opacity-100');
+      }, 4000); // rotate every 4 seconds
+    });
+  });
+</script>
 </body>
 </html>
